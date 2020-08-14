@@ -1,0 +1,1 @@
+{"version":3,"file":"isMediaElement.js","sourceRoot":"","sources":["../../../src/dom/isMediaElement.ts"],"names":[],"mappings":";;;AAAA,8BAA6B;AAE7B,SAAgB,cAAc,CAAC,KAAU;IAEjC,IAAA,KAA2B,SAAG,CAAC,MAAM,EAAE,EAArC,KAAK,WAAA,EAAE,MAAM,YAAA,EAAE,KAAK,WAAiB,CAAA;IAE7C,OAAO,KAAK,YAAY,KAAK;WACxB,KAAK,YAAY,MAAM;WACvB,KAAK,YAAY,KAAK,CAAA;AAC7B,CAAC;AAPD,wCAOC"}
