@@ -19,7 +19,7 @@ var DrawTextFieldOptions = /** @class */ (function () {
         this.fontColor = fontColor || '#008bf0';
         this.fontSize = fontSize || 22;
         this.fontStyle = fontStyle || 'normal';
-        this.padding = padding || 0;
+        this.padding = padding || 20;
     }
     return DrawTextFieldOptions;
 }());
@@ -77,8 +77,8 @@ var DrawTextField = /** @class */ (function () {
             }
         }
         else {
-            var _a = this.options, backgroundColor = _a.backgroundColor, fontColor = _a.fontColor, fontSize_1 = _a.fontSize, fontStyle = _a.fontStyle, padding = _a.padding;
-            var paddingW_1 = (Number(boxWidth) / 2) - 70;
+            var _a = this.options, backgroundColor = _a.backgroundColor, fontColor = _a.fontColor, fontSize_1 = _a.fontSize, fontStyle = _a.fontStyle, padding_1 = _a.padding;
+            // const paddingW = (Number(boxWidth) / 2) - 70;
             ctx.font = fontSize_1 + "px " + fontStyle;
             var maxTextWidth = this.measureWidth(ctx);
             var textHeight_1 = this.measureHeight();
@@ -87,8 +87,8 @@ var DrawTextField = /** @class */ (function () {
             ctx.fillRect(upperLeft_1.x, upperLeft_1.y - textHeight_1, maxTextWidth, textHeight_1);
             ctx.fillStyle = fontColor;
             this.text.forEach(function (textLine, i) {
-                var x = paddingW_1 + upperLeft_1.x;
-                var y = paddingW_1 + upperLeft_1.y - textHeight_1 + ((i + 1) * fontSize_1);
+                var x = padding_1 + upperLeft_1.x;
+                var y = padding_1 + upperLeft_1.y - textHeight_1 + ((i + 1) * fontSize_1);
                 ctx.fillText(textLine, x, y);
             });
         }
