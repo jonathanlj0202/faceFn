@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.FaceMatch = void 0;
-var utils_1 = require("../utils");
 var FaceMatch = /** @class */ (function () {
     function FaceMatch(label, distance) {
         this._label = label;
@@ -19,7 +18,8 @@ var FaceMatch = /** @class */ (function () {
     });
     FaceMatch.prototype.toString = function (withDistance) {
         if (withDistance === void 0) { withDistance = true; }
-        return "" + this.label + (withDistance ? " (" + utils_1.round(this.distance) + ")" : '');
+        // return `${this.label}${withDistance ? ` (${round(this.distance)})` : ''}`
+        return "" + this.label;
     };
     return FaceMatch;
 }());

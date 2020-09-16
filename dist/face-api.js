@@ -1097,8 +1097,8 @@
           configurable: true
       });
       FaceMatch.prototype.toString = function (withDistance) {
-          if (withDistance === void 0) { withDistance = true; }
-          return "" + this.label + (withDistance ? " (" + round(this.distance) + ")" : '');
+          // return `${this.label}${withDistance ? ` (${round(this.distance)})` : ''}`
+          return "" + this.label;
       };
       return FaceMatch;
   }());
