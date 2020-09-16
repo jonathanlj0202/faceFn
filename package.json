@@ -1,6 +1,6 @@
 {
   "name": "facefn",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "face-api.js的方法的修改",
   "module": "./build/es6/index.js",
   "main": "./build/commonjs/index.js",
