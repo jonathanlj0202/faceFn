@@ -1,6 +1,6 @@
 import { env } from '../env';
 
-export async function bufferToImage(buf: Blob): Promise<HTMLImageElement> {
+export function bufferToImage(buf: Blob): Promise<HTMLImageElement> {
   return new Promise((resolve, reject) => {
     if (!(buf instanceof Blob)) {
       return reject('bufferToImage - expected buf to be of type: Blob')
