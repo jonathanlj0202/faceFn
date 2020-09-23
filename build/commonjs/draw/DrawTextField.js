@@ -17,7 +17,7 @@ var DrawTextFieldOptions = /** @class */ (function () {
         this.anchorPosition = anchorPosition || AnchorPosition.TOP_LEFT;
         this.backgroundColor = backgroundColor || 'rgba(255, 255, 255, 0)';
         this.fontColor = fontColor || '#008bf0';
-        this.fontSize = fontSize || 22;
+        this.fontSize = fontSize || 28;
         this.fontStyle = fontStyle || 'normal';
         this.padding = padding || 20;
     }
